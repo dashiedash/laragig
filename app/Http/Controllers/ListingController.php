@@ -10,7 +10,7 @@ class ListingController extends Controller
   // All Listings
   public function index()
   {
-    return view('listings', [
+    return view('listings.index', [
       'listings' => Listing::all()
     ]);
   }
@@ -19,7 +19,7 @@ class ListingController extends Controller
   // Single Listings
   public function show(Listing $listing)
   {
-    return view('listing', [
+    return view('listings.show', [
       'listing' => $listing
     ]);
   }

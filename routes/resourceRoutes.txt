@@ -1,0 +1,7 @@
+Common Resource Routes:
+- index = show all listings
+- show = show single listing
+- create = show form to create a new listing
+- edit = show form to edit an existing listing
+- update = update listing
+- destroy = delete listing
