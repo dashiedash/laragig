@@ -9,7 +9,7 @@
   </a>
 
   <div class="mx-4">
-    <div class="rounded border border-gray-200 bg-gray-50 p-10">
+    <x-card class="!p-10">
       <div class="flex flex-col items-center justify-center text-center">
         <img
           class="mr-6 mb-6 w-48"
@@ -56,6 +56,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </x-card>
   </div>
 @endsection
