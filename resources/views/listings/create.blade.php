@@ -9,7 +9,7 @@
       <p class="mb-4">Post a gig to find a developer</p>
     </header>
 
-    <form method="POST" action="/listings">
+    <form method="POST" action="/listings" enctype="multipart/form-data">
       @csrf
       <div class="mb-6">
         <label
@@ -114,7 +114,7 @@
         @enderror
       </div>
 
-      {{-- <div class="mb-6">
+      <div class="mb-6">
         <label for="logo" class="mb-2 inline-block text-lg">
           Company Logo
         </label>
@@ -122,7 +122,13 @@
           type="file"
           class="w-full rounded border border-gray-200 p-2"
           name="logo" />
-      </div> --}}
+
+        @error('logo')
+          <p class="mt-1 text-xs text-red-500">
+            {{ $message }}
+          </p>
+        @enderror
+      </div>
 
       <div class="mb-6">
         <label
