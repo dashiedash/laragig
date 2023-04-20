@@ -18,7 +18,8 @@
         <input
           type="text"
           class="w-full rounded border border-gray-200 p-2"
-          name="company" />
+          name="company"
+          value=" {{ old('company') }} " />
 
         @error('company')
           <p class="mt-1 text-xs text-red-500">
@@ -33,6 +34,7 @@
           type="text"
           class="w-full rounded border border-gray-200 p-2"
           name="title"
+          value=" {{ old('title') }} "
           placeholder="Example: Senior Laravel Developer" />
 
         @error('title')
@@ -50,6 +52,7 @@
           type="text"
           class="w-full rounded border border-gray-200 p-2"
           name="location"
+          value=" {{ old('location') }} "
           placeholder="Example: Remote, Boston MA, etc" />
 
         @error('location')
@@ -64,7 +67,8 @@
         <input
           type="text"
           class="w-full rounded border border-gray-200 p-2"
-          name="email" />
+          name="email"
+          value=" {{ old('email') }} " />
 
         @error('email')
           <p class="mt-1 text-xs text-red-500">
@@ -82,7 +86,8 @@
         <input
           type="text"
           class="w-full rounded border border-gray-200 p-2"
-          name="website" />
+          name="website"
+          value=" {{ old('website') }} " />
 
         @error('website')
           <p class="mt-1 text-xs text-red-500">
@@ -99,6 +104,7 @@
           type="text"
           class="w-full rounded border border-gray-200 p-2"
           name="tags"
+          value=" {{ old('tags') }} "
           placeholder="Example: Laravel, Backend, Postgres, etc" />
 
         @error('tags')
@@ -128,7 +134,8 @@
           class="w-full rounded border border-gray-200 p-2"
           name="description"
           rows="10"
-          placeholder="Include tasks, requirements, salary, etc"></textarea>
+          placeholder="Include tasks, requirements, salary, etc">{{ old('description') }}
+        </textarea>
 
         @error('description')
           <p class="mt-1 text-xs text-red-500">
