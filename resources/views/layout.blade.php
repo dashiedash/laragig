@@ -45,12 +45,12 @@
     <ul class="mr-6 flex space-x-6 text-lg">
       <li>
         <a
-          href="register.html"
+          href="/register"
           class="hover:text-laravel"><i class="fa-solid fa-user-plus"></i> Register</a>
       </li>
       <li>
         <a
-          href="login.html"
+          href="/login"
           class="hover:text-laravel"><i class="fa-solid fa-arrow-right-to-bracket"></i>
           Login</a>
       </li>
