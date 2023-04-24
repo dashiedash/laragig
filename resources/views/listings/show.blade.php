@@ -54,13 +54,13 @@
         <i class="fa-solid fa-pencil">Edit</i>
       </a>
 
-      <form method="POST" action="/listings/{{ $listing->id }}">
+      {{-- <form method="POST" action="/listings/{{ $listing->id }}">
         @csrf
         @method('DELETE')
         <button class="text-red-500">
           <i class="fa-solid fa-trash">Delete</i>
         </button>
-      </form>
+      </form> --}}
     </x-card>
   </div>
 @endsection
